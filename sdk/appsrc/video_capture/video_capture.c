@@ -164,8 +164,8 @@ int VideoStart(VideoCapture *videoPtr)
 	//xil_printf("Video start entered\n\r");
 	if (videoPtr->state == VIDEO_DISCONNECTED)
 		return XST_NO_DATA;
-	if (videoPtr->state == VIDEO_STREAMING)
-		return XST_SUCCESS;
+	//if (videoPtr->state == VIDEO_STREAMING)
+	//	return XST_SUCCESS;
 
 	/*
 	 * Configure the VDMA to access a frame with the same dimensions as the
